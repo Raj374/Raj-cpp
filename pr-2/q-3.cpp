@@ -7,6 +7,7 @@ int main() {
     cin >> num;
 
     int last = num % 10; 
+    
 
     while (num >= 10) {
         num = num / 10;
