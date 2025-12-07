@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.2 Gross Salary</title>
+</head>
+
+<body>
+    <script>
+        let base = +prompt("Enter base salary : ");
+
+        let hra = +prompt("Enter HRA % : ");
+        let da = +prompt("Enter DA% : ");
+        let ta = +prompt("Enter TA % : ");
+
+        let grossSalary = base + (base * hra / 100) + (base * da / 100) + (base * ta / 100);
+
+        console.log("Gross Salary : ", grossSalary);
+
+
+
+
+    </script>
+</body>
+
+</html>
