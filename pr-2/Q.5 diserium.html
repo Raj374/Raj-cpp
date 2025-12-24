@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diserium number</title>
+</head>
+
+<body>
+    <h2>Diserium number</h2>
+    <script>
+
+        let num = prompt("Enter a number:");
+        let temp = num;
+        let sum = 0;
+
+      for (let i = 0; i < num.length; i++) {
+            sum += Math.pow(Number(num[i]), i + 1);
+        }
+
+        if (sum == temp) {
+            console.log(temp + " is a Disarium number");
+        } else {
+            console.log(temp + " is not a Disarium number");
+        }
+ </script>
+
+</body>
+
+</html>

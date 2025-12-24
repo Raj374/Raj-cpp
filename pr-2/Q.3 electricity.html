@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity</title>
+</head>
+
+<body>
+    <h2>Electricity</h2>
+    <script>
+        let units = +prompt("Enter electricity units:");
+
+        let bill = 0;
+
+        if (units <= 50) {
+            bill = units * 0.50;
+        }
+        else if (units <= 150) {
+            bill = (50 * 0.50) + (units - 50) * 0.75;
+        }
+        else if (units <= 250) {
+            bill = (50 * 0.50) + (100 * 0.75) + (units - 150) * 1.20;
+        }
+        else {
+            bill = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + (units - 250) * 1.50;
+        }
+
+        bill = bill + (bill * 0.20);
+
+        console.log("Electricity Bill = Rs.", bill.toFixed(2));
+
+    </script>
+</body>
+
+</html>

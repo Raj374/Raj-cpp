@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum for one digit print</title>
+</head>
+
+<body>
+    <h2>sum one digit print</h2>
+    <script>
+        let n = +prompt("Enter a number:");
+        console.log(n);
+        while (n >= 10) {
+            let sum = 0;
+
+            while (n > 0) {
+                sum = sum + (n % 10);
+                n = Math.floor(n / 10);
+            }
+
+            n = sum;
+        }
+  console.log("Last single-digit is:", n);
+
+
+</script>
+</body>
+
+</html>
